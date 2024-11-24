@@ -21,7 +21,7 @@ const LoginSignUp = () => {
     console.log("login executed", formData)
     let responseData;
 
-    await fetch('https://ecommerce-backend12.onrender.com/login',{
+    await fetch('https://e-commerce-nfmv.onrender.com/login',{
       method:'POST',
       headers:{
         Accept:'application/json',
@@ -52,7 +52,7 @@ const LoginSignUp = () => {
     console.log("signup executed", formData)
     let responseData;
 
-    await fetch('https://ecommerce-backend12.onrender.com/signup',{
+    await fetch('https://e-commerce-nfmv.onrender.com/signup',{
       method:'POST',
       headers:{
         Accept:'application/json',

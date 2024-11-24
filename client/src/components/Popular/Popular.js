@@ -8,7 +8,7 @@ const Popular = () => {
 
   useEffect(()=>
   {
-      fetch('https://ecommerce-backend12.onrender.com/popular')
+      fetch('https://e-commerce-nfmv.onrender.com/popular')
       .then((res)=>res.json())
       .then((data)=>
       {

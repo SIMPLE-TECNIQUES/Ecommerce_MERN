@@ -31,7 +31,7 @@ const ShopContextProvider = (props) =>
 
   useEffect(()=>
   {
-    fetch('https://ecommerce-backend12.onrender.com/allproducts')
+    fetch('https://e-commerce-nfmv.onrender.com/allproducts')
     .then((res) => {
         if (!res.ok) {
             throw new Error('Network response was not ok');
@@ -49,7 +49,7 @@ const ShopContextProvider = (props) =>
 
     if(localStorage.getItem('auth-token'))
     {
-    fetch('https://ecommerce-backend12.onrender.com/getcart',
+    fetch('https://e-commerce-nfmv.onrender.com/getcart',
     {
     method:'POST',
     headers:{
@@ -116,7 +116,7 @@ const ShopContextProvider = (props) =>
   
 
     if (localStorage.getItem('auth-token')) {
-        fetch('https://ecommerce-backend12.onrender.com/addtocart', {
+        fetch('https://e-commerce-nfmv.onrender.coms/addtocart', {
             method: 'POST',
             headers: {
                 Accept: 'application/form-data',
@@ -159,7 +159,7 @@ const ShopContextProvider = (props) =>
     message.success("Item is removed from cart")
 
     if (localStorage.getItem('auth-token')) {
-      fetch('https://ecommerce-backend12.onrender.com/removefromcart', {
+      fetch('https://e-commerce-nfmv.onrender.com/removefromcart', {
           method: 'POST',
           headers: {
               Accept: 'application/form-data',
